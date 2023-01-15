@@ -1,6 +1,8 @@
-## Mosh - Simple Web page with React
+# Getting Started with Mosh App
 
 This is a simple webpage created with create-react-app to demonstrate how a react app can be developed from scratch.
+
+## Mosh - Simple Web page with React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and use:
 
@@ -10,8 +12,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Tests with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - Routing with [React router](https://reactrouter.com/)
 - Component explorer [Storybook](https://storybook.js.org/)
-
-# Getting Started with Mosh App
 
 ## Available Scripts
 
