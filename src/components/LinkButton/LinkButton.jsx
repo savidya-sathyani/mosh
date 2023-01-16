@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { buttonModes } from '../../constants/buttonConstants';
 import getObjectValuesAsArray from '../../utils/getObjectValuesAsArray';
 
-import { StyledButton } from '../../styled-components/Button.style';
+import { StyledButton } from './LinkButton.style';
 
 const LinkButton = ({ label, mode, link, onClick, ...props }) => {
   return (
