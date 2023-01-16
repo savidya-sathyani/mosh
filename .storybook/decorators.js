@@ -1,7 +1,7 @@
 import { ThemeProvider } from "styled-components";
 
-import GlobalStyle from "../src/styled-components/Global.style";
-import { lightTheme, darkTheme } from "../src/styled-components/theme";
+import GlobalStyle from "../src/styles/Global.style";
+import { lightTheme, darkTheme } from "../src/styles/utils/theme";
 
 const withTheme = (StoryFn, context) => {
   const theme = context.parameters.theme || context.globals.theme;

@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { breakpoints } from "./utils/breakpoints";
+import { breakpoints } from "../../styles/utils/breakpoints";
 
 export const StyledButton = styled.button(
   ({ mode, theme: { color, fonts } }) => css`
