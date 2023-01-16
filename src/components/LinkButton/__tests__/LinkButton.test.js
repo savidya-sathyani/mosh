@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import LinkButton from "../LinkButton";
+import LinkButton from "../index";
 import { WithTheme } from "../../../tests/utils/mockComponent";
 
 const btnProps = {
