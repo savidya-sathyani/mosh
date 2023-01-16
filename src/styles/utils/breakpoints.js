@@ -1,4 +1,4 @@
-export const viewPorts = {
+const viewPorts = {
   S: 480,
   M: 768,
   L: 1024,

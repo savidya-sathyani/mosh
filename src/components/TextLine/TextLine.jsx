@@ -1,20 +1,24 @@
 import React from 'react';
+import tick from '../../assets/icons/tick.svg';
+
 import PropTypes from 'prop-types';
 
-import 
+import { StyledTextLine } from './TextLine.style';
 
-const TextLine = ({ label, mode, link, onClick, ...props }) => {
+const TextLine = ({ label }) => {
   return (
-    <StyledTextLine></StyledTextLine>
+    <StyledTextLine label={label}>
+      <img src={tick} alt={label} />
+      <p>{label}</p>
+    </StyledTextLine>
   );
 };
 
 TextLine.propTypes = {
-
-};
-
-TextLine.defaultProps = {
-
+  /**
+   * Label for the text line
+   */
+  label: PropTypes.string.isRequired,
 };
 
 export default TextLine;
