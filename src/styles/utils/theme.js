@@ -12,6 +12,7 @@ const baseColors = {
 
 const typography = {
   base: "'Maison Neue', sans-serif",
+  heading: "Clearface ITC Pro",
 };
 
 const globalStyles = {
@@ -19,6 +20,7 @@ const globalStyles = {
     buttonFont: typography.base,
     textLineFont: typography.base,
     cardHeaderFont: typography.base,
+    titleFont: typography.heading,
   },
 };
 
@@ -26,7 +28,7 @@ export const lightTheme = {
   ...globalStyles,
   name: "light",
   color: {
-    background: baseColors.white.base,
+    background: baseColors.white.light1,
     buttonBackgroundPrimary: baseColors.orange.base,
     buttonTextPrimary: baseColors.white.light1,
     buttonBackgroundSecondary: baseColors.gray,

@@ -9,27 +9,26 @@ import CardContainer from "./components/CardContainer";
 import { lightTheme, darkTheme } from "./styles/utils/theme";
 import { StyledAppRaw } from "./styles/AppRaw.style";
 import GlobalStyle from "./styles/Global.style";
+import TitleContainer from "./components/TitleContainer";
 
 
 function App() {
   const theme = 'light';
   const appTheme = theme === 'dark' ? darkTheme : lightTheme;
   const data = [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "Lorem ipsum dolor sit amet, consectetur",
+    "Lorem ipsum dolor sit amet, consectetur",
+    "Lorem ipsum dolor sit amet, consectetur",
   ]
   return (
     <ThemeProvider theme={appTheme}>
       <GlobalStyle theme={appTheme} />
       <StyledAppRaw>
-        <section>
-          <h1>Get back on track</h1>
-          <span>
-            <p>Treatment plans in 24 hours.</p>
-            <p>Treat anxiety, depression and more.</p>
-          </span>
-        </section>
+        <TitleContainer>
+          <p id="heading">Get back on track</p>
+          <p>Treatment plans in 24 hours.</p>
+          <p>Treat anxiety, depression and more.</p>
+        </TitleContainer>
         <CardContainer>
           <Card
             image={{ src: image1, alt: "Online Consultation" }}

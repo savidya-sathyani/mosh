@@ -6,7 +6,7 @@ export const StyledCardContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70%;
+
   @media ${breakpoints.M} {
     flex-direction: row;
     align-items: flex-start;

@@ -8,6 +8,7 @@ export const StyledCardHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   min-width: 100%;
+  padding-bottom: 0.5rem;
   img {
     width: 12px;
     height: 7px !important;

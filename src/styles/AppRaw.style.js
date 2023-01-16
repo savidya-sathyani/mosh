@@ -1,18 +1,18 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { breakpoints } from "./utils/breakpoints";
 
-export const StyledAppRaw = styled.div`
+export const StyledAppRaw = styled.div(
+  ({ theme: { color } }) => css`
   width: 100%;
   height: fit-content;
   display: flex;
   flex-direction: raw;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 3rem;
-  background-color: #f5f5f5;
-
+  padding: 5rem 7rem;
+  background-color: ${color.background};
   @media ${breakpoints.M} {
     flex-direction: column;
     padding: 1rem;
-  }
-`;
+    `
+);
