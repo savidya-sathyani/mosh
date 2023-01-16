@@ -6,12 +6,12 @@ export const StyledTextLine = styled.div(
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 24px;
+    height: 100%;
     width: 100%;
-    margin: 1rem;
+    margin: 0.5rem 0;
     img {
       width: 1rem;
-      height: 1rem;
+      height: 1rem !important;
       margin-right: 1rem;
     }
     p {
@@ -23,10 +23,13 @@ export const StyledTextLine = styled.div(
       letter-spacing: -0.01em;
       color: ${color.textLine};
       width: 100%;
+      margin: 0 0.5rem;
     }
 
-    @media ${breakpoints.S} {
-      height: 21px;
+    @media ${breakpoints.M} {
+      height: 100%;
+      min-height: 21px;
+      margin: 0;
     }
   `
 );
