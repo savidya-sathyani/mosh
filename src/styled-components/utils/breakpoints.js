@@ -5,7 +5,7 @@ export const viewPorts = {
 };
 
 export const breakpoints = {
-  S: `(min-width: ${viewPorts.S}px)`,
-  M: `(min-width: ${viewPorts.M}px)`,
-  L: `(min-width: ${viewPorts.L}px)`,
+  S: `(max-width: ${viewPorts.S}px)`,
+  M: `(max-width: ${viewPorts.M}px)`,
+  L: `(max-width: ${viewPorts.L}px)`,
 };
