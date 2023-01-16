@@ -18,6 +18,7 @@ const globalStyles = {
   fonts: {
     buttonFont: typography.base,
     textLineFont: typography.base,
+    cardHeaderFont: typography.base,
   },
 };
 
@@ -31,6 +32,7 @@ export const lightTheme = {
     buttonBackgroundSecondary: baseColors.gray,
     buttonTextSecondary: baseColors.white.base,
     textLine: baseColors.green,
+    textCardHeader: baseColors.green,
   },
 };
 
@@ -44,5 +46,6 @@ export const darkTheme = {
     buttonBackgroundSecondary: baseColors.gray,
     buttonTextSecondary: baseColors.white.base,
     textLine: baseColors.green,
+    textCardHeader: baseColors.green,
   },
 };

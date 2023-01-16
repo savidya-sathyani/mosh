@@ -9,7 +9,7 @@ export const StyledButton = styled.button(
     align-items: center;
     padding: 16px 24px;
     gap: 8px;
-    width: "220px";
+    width: 220px;
     height: 53px;
     background: ${color[`buttonBackground${mode}`]} !important;
     border: none;
