@@ -8,7 +8,7 @@ export const StyledTextLine = styled.div(
     align-items: center;
     height: 100%;
     width: 100%;
-    margin: 0.5rem 0;
+    padding: 0.5rem 0;
     img {
       width: 1rem;
       height: 1rem !important;

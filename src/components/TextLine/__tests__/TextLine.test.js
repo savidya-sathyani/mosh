@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import TextLine from "../TextLine";
+import TextLine from "../index";
 import { WithTheme } from "../../../tests/utils/mockComponent";
 
 const btnProps = {
