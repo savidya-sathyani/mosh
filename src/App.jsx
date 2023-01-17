@@ -11,20 +11,20 @@ import { lightTheme, darkTheme } from "./styles/utils/theme";
 import { StyledAppRaw } from "./styles/AppRaw.style";
 import GlobalStyle from "./styles/Global.style";
 import TitleContainer from "./components/TitleContainer";
-// import { get } from "./api/invoke";
+import { get } from "./api/invoke";
 
-const mockData = {
-  consultation: [
-    "Personalized treatment options",
-    "Video consults and easy check-ins",
-    "Medication, prescribed and delivered",
-  ],
-  therapy: [
-    "Match with registered therapists",
-    "Video sessions and easy check-ins",
-    "Confidential online therapy sessions",
-  ]
-}
+// const mockData = {
+//   consultation: [
+//     "Personalized treatment options",
+//     "Video consults and easy check-ins",
+//     "Medication, prescribed and delivered",
+//   ],
+//   therapy: [
+//     "Match with registered therapists",
+//     "Video sessions and easy check-ins",
+//     "Confidential online therapy sessions",
+//   ]
+// }
 
 function App() {
   const theme = 'light';
@@ -34,11 +34,11 @@ function App() {
 
   useEffect(() => {
     (async () => {
-      // let res = await get({ path: '/my/api/options' });
-      // setConsultationData(res.consultation);
-      // setTherapyData(res.therapy);
-      setConsultationData(mockData.consultation);
-      setTherapyData(mockData.therapy);
+      const res = await get({ path: 'https://moshhero.free.beeceptor.com/my/api/options' });
+      setConsultationData(res.consultation);
+      setTherapyData(res.therapy);
+      // setConsultationData(mockData.consultation);
+      // setTherapyData(mockData.therapy);
     })();
   }, []);
 

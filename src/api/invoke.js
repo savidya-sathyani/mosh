@@ -1,7 +1,7 @@
 import moshApi from "./moshApi";
 
 export const get = async ({ path }) => {
-  await moshApi
+  return moshApi
     .get(path)
     .then((response) => {
       return response.data;
